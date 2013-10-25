@@ -23,7 +23,7 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-/**
+/** test
  * Extension update script
  * Needed for version 0.8.0, just for existing dce instances
  */
