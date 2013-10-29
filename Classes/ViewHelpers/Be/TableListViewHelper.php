@@ -23,8 +23,8 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-require_once (PATH_typo3 . 'class.db_list.inc');
-require_once (PATH_typo3 . 'class.db_list_extra.inc');
+//require_once (PATH_typo3 . 'class.db_list.inc');
+//require_once (PATH_typo3 . 'class.db_list_extra.inc');
 
 /**
  * Class Tx_Dce_ViewHelpers_Be_TableListViewHelper
