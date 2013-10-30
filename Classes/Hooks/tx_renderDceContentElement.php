@@ -23,8 +23,6 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-require_once(PATH_typo3 . 'sysext/cms/layout/interfaces/interface.tx_cms_layout_tt_content_drawitemhook.php');
-
 if (t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version) >= 6000000) {
 	/**
 	 * Render DCE Content Element Hook
@@ -52,6 +50,8 @@ if (t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version) >=
 		}
 	}
 } else {
+	require_once(PATH_typo3 . 'sysext/cms/layout/interfaces/interface.tx_cms_layout_tt_content_drawitemhook.php');
+
 	/**
 	 * Render DCE Content Element Hook
 	 * for < TYPO3 6.0
