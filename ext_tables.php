@@ -10,7 +10,7 @@ if (!file_exists($GLOBALS['TYPO3_CONF_VARS']['USER']['dce']['dceExtTablesPath'])
 	$dceCache->createExtTables($GLOBALS['TYPO3_CONF_VARS']['USER']['dce']['dceExtTablesPath']);
 }
 require_once($GLOBALS['TYPO3_CONF_VARS']['USER']['dce']['dceExtTablesPath']);
-
+/*
 Tx_Extbase_Utility_Extension::registerModule(
 	$_EXTKEY,
 	'hide',
@@ -20,7 +20,7 @@ Tx_Extbase_Utility_Extension::registerModule(
 		'Dce' => 'renderPreview'
 	)
 );
-
+*/
 $extConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['dce']);
 if ($extConfiguration['enableDceModule'] == 1) {
 	Tx_Extbase_Utility_Extension::registerModule(
