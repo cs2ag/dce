@@ -45,12 +45,12 @@
 											</settings.{field.variable}>
 										</f:then>
 										<f:else>
-											<settings.{field.variable}>
+											<settings_{field.variable}>
 													<TCEforms>
 															<label>{field.title}</label>
 															{field.configuration -> dce:format.raw()}
 													</TCEforms>
-											</settings.{field.variable}>
+											</settings_{field.variable}>
 										</f:else>
 									</f:if>
 								</f:for>
