@@ -24,7 +24,7 @@
 												<section>1</section>
 												<type>array</type>
 												<el>
-													<container_{field.variable}>
+													<container.{field.variable}>
 														<type>array</type>
 														<title>{field.section_fields_tag}</title>
 														<tx_templavoila>
@@ -40,17 +40,17 @@
 																</{sectionField.variable}>
 															</f:for>
 														</el>
-													</container_{field.variable}>
+													</container.{field.variable}>
 												</el>
 											</settings.{field.variable}>
 										</f:then>
 										<f:else>
-											<settings_{field.variable}>
+											<settings.{field.variable}>
 													<TCEforms>
 															<label>{field.title}</label>
 															{field.configuration -> dce:format.raw()}
 													</TCEforms>
-											</settings_{field.variable}>
+											</settings.{field.variable}>
 										</f:else>
 									</f:if>
 								</f:for>
